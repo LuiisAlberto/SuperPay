@@ -8,21 +8,93 @@
     <title>SuperPay</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css.map">
+    <style>
+@media print {
+    body {
+        background: #fff !important;
+    }
+    header {
+        box-shadow: none;
+        background: #fff !important;
+    }
+
+    header h1 {
+        background: #fff;
+    }
+    
+    #navigation {
+        display: none;
+    }
+
+    .main-container #page {
+        background: #fff;
+        box-shadow: none;
+        border: 2px solid #000;
+    }
+    
+    .content aside.sidebar {
+        display: none;
+    }
+
+    .content article {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        background: #fff;
+    }
+
+    .content article #content_box {
+        background: #fff;
+        box-shadow: none;
+        border-top: 2px solid #000
+    }
+
+    .content article a[target=_blank]:after {
+        content: " (" attr(href) ")";
+    }
+
+    .content article #content_box .related-posts {
+        display: none;
+    }
+
+    .content article #disqus_thread {
+        display: none;
+    }
+    
+    .content article .crayon-num {
+        display: none;
+    }
+
+    ins.adsbygoogle {
+        display: none !important;
+    }
+
+    footer {
+        background: #fff;
+    }
+
+    footer .container {
+        background: #fff;
+        box-shadow: none;
+        border: 2px solid #000;
+    }
+}
+    </style>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg"
         style=" background: rgb(40,67,123); background: linear-gradient(90deg, rgba(40,67,123,1) 0%, rgba(51,89,123,1) 25%, rgba(66,122,123,1) 50%, rgba(81,155,122,1) 75%, rgba(92,181,122,1) 100%);">
-        <div class="container justify-content-end">
-            <span class="navbar-text text-light" style="margin-right: 50px;">
+        <div class="container justify-content-end ">
+            <span class="navbar-text text-light" style="margin-right: 50px; font-size: 1rem;">
                 <img src="assets/img/telefono.png" alt="Phone"
-                    style="width: 22px; margin-right: 5px !important; filter: invert(100%);">
+                    style="width: 1.3rem; margin-right: .1rem !important; filter: invert(100%);">
                 Soporte: +52 55 1234 5678
             </span>
-            <span class="navbar-text text-light" style="margin-right: 50px;">
+            <span class="navbar-text text-light" style="margin-right: 50px; font-size: 1rem;">
                 <img src="assets/img/correo.png" alt="Mail"
-                    style="width: 25px; margin-left: 5px !important; filter: invert(100%);">
+                    style="width: 1.6rem; margin-left: .1rem !important; filter: invert(100%);">
                 soporte@superpay.mx
             </span>
         </div>
@@ -33,11 +105,11 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img src="assets/img/Recurso 3.svg" alt="Logo" style="width: 300px;">
+                <img class="img-fluid" src="assets/img/Recurso 3.svg" alt="Logo" style="width: 20rem;">
             </div>
             <div class="col-6">
-                <h6 class="text-end" style="color: #5DB67A;">12 de Enero de 2022</h6>
-                <h3 class="text-end mt-1" style="color: #28427B;">Comprobante de Pago</h3>
+                <h6 class="text-end" style="color: #5DB67A; font-size: .9rem;">12 de Enero de 2022</h6>
+                <h3 class="text-end " style="color: #28427B; font-size: 1.5rem;">Comprobante de Pago</h3>
             </div>
         </div>
     </div>
@@ -46,36 +118,36 @@
     <!-- Contenido de la tabla -->
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-12 col-sm-6">
                 <table class="table table-borderless">
                     <thead>
                         <tr style="background-color: #E6E6E6;">
-                            <th scope="col" style="color: #28427B; font-size: 17px; font-weight: bold;">PROVEEDOR DEL SERVICIO</th>
-                            <th scope="col" class="text-end" style="color: #28427B; font-size: 17px; font-weight: bold;">NO. DE TARJETA</th>
+                            <th class="text-break" scope="col" style="color: #28427B; font-size: 1rem; font-weight: bold;">PROVEEDOR DEL SERVICIO</th>
+                            <th scope="col" class="text-end text-break" style="color: #28427B; font-size: 1rem; font-weight: bold;">NO. DE TARJETA</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <td style="background-color: #E6E6E6; font-size: 15px; font-weight: bold;">ACNT*MAIM</td>
-                        <td class="text-end" style="font-size: 15px; background-color: #E6E6E6; font-weight: bold;">5204-XXXX-XXXX-2396</td>
+                        <td class="text-break" style="background-color: #E6E6E6; font-size: .9rem; font-weight: bold;">ACNT*MAIM</td>
+                        <td class="text-end text-break" style="font-size: .9rem; background-color: #E6E6E6; font-weight: bold;">5204-XXXX-XXXX-2396</td>
                     </tbody>
                     <thead>
-                        <th style="color: #28427B; font-size: 17px; font-weight: bold;">COMERCIO</th>
-                        <th class="text-end" style="color: #28427B; font-size: 17px; font-weight: bold;">ID DE TRANSACCIÓN</th>
+                        <th class="text-break" style="color: #28427B; font-size: 1rem; font-weight: bold;">COMERCIO</th>
+                        <th class="text-end text-break" style="color: #28427B; font-size: 1rem; font-weight: bold;">ID DE TRANSACCIÓN</th>
                     </thead>
                     <tbody>
-                        <td style="font-size: 15px; font-weight: bold;">SOLUCIONES EN AGUA MAIN S.A DE C.V</td>
-                        <td class="text-end" style="font-size: 15px; font-weight: bold;">pbLahrMmPF</td>
+                        <td class="text-break" style="font-size: .9rem; font-weight: bold;">SOLUCIONES EN AGUA MAIN S.A DE C.V</td>
+                        <td class="text-end text-break" style="font-size: .9rem; font-weight: bold;">pbLahrMmPF</td>
                     </tbody>
                     <thead>
-                        <th style="background-color: #E6E6E6; color: #28427B; font-size: 17px; font-weight: bold;">
+                        <th class="text-break" style="background-color: #E6E6E6; color: #28427B; font-size: 1rem; font-weight: bold;">
                             TARJETAHABIENTE</th>
-                        <td class="text-end"
-                            style="background-color: #E6E6E6; color: #28427B; font-size: 17px; font-weight: bold;">REF.
+                        <td class="text-end text-break"
+                            style="background-color: #E6E6E6; color: #28427B; font-size: 1rem; font-weight: bold;">REF.
                         </td>
                     </thead>
                     <tbody>
-                        <td style="background-color: #E6E6E6; font-size: 15px; font-weight: bold;">LIORA KALACH</td>
-                        <td class="text-end" style="background-color: #E6E6E6; font-size: 15px; font-weight: bold;">280941</td>
+                        <td class="text-break" style="background-color: #E6E6E6; font-size: .9rem; font-weight: bold;">LIORA KALACH</td>
+                        <td class="text-end text-break" style="background-color: #E6E6E6; font-size: .9rem; font-weight: bold;">280941</td>
                     </tbody>
                 </table>
             </div>
@@ -86,18 +158,18 @@
     <!-- Contenido de la tabla -->
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-12 col-sm-6">
                 <table class="table table-borderless">
                     <thead>
                         <tr style="background-color: #5DB67A">
-                            <th scope="col" style="color: #28427B; font-size: 22px; font-weight: bold;">Concepto</th>
+                            <th scope="col" style="color: #28427B; font-size: 1.2rem; font-weight: bold;">Concepto</th>
                             <th scope="col" class="text-end text-center"
-                                style="color: #28427B; font-size: 22px; font-weight: bold;">Total</th>
+                                style="color: #28427B; font-size: 1.2rem; font-weight: bold;">Total</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <td style="color: #28427B; font-size: 18px;">PRDRENTA PAGO DEL MES DE ENERO DE 2022 (3-12)</td>
-                        <td class="text-end text-center" style="color: #28427B; font-size: 19px; font-weight: bold;">
+                        <td style="color: #28427B; font-size: 1rem;">PRDRENTA PAGO DEL MES DE ENERO DE 2022 (3-12)</td>
+                        <td class="text-end text-center" style="color: #28427B; font-size: 1.1rem; font-weight: bold;">
                             $430.00 MXN</td>
                     </tbody>
                 </table>
@@ -111,8 +183,8 @@
     <br>
     <!-- linea para nombre y firma -->
     <div class="container">
-        <hr style="background-color:#000000; border-color: #000000; width: 30%; height: 2px; margin-left: 35%;">
-        <h5 class="text-center">NOMBRE COMPLETO Y FIRMA</h5>
+        <hr class="img-fluid" style="background-color:#000000; border-color: #000000; width: 40%; height: 2px; margin-left: 30%;">
+        <h5 class="text-center text-break" style="font-size: 1rem;">NOMBRE COMPLETO Y FIRMA</h5>
     </div>
 
     <br>
@@ -123,8 +195,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <p class="text-start" style="color: #28427B; font-size: 10px;">
+            <div class="col-md-12 col-sm-6">
+                <p class="text-start text-break" style="color: #28427B; font-size: .7rem;">
                     Al firmar este documento ratifico y estoy conforme y enterado del cargo que aparecerá en mi estado
                     de cuenta
                     como SUPERPAY*MAIM. <br>
@@ -148,13 +220,13 @@
     </div>
     <br>
     <footer>
-        <div class="container-fluid" style="background-color: #28427B; height: 35px;">
+        <div class="container-fluid" style="background-color: #28427B; height: 5%;">
             <div class="row">
                 <div class="col-6">
-                    <h6 class="text-start" style="color: #FFFFFF; font-size: 12px; margin-top: 10px !important;">www.superpay.mx</h6>
+                    <h6 class="text-start" style="color: #FFFFFF; font-size: .8rem;">www.superpay.mx</h6>
                 </div>
-                <div class="col-6 ">
-                    <h6 class="text-end" style="color: #FFFFFF; font-size: 12px; margin-top: 10px !important;">Fecha y hora de creación: 24 Ene 2022 11:56</h6>
+                <div class="col-6">
+                    <h6 class="text-end" style="color: #FFFFFF; font-size: .7rem;">Fecha y hora de creación: 24 Ene 2022 11:56</h6>
                 </div>
             </div>
         </div>
